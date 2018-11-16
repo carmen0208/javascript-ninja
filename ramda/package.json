@@ -1,0 +1,14 @@
+{
+  "name": "learn_ramda",
+  "version": "1.0.0",
+  "description": "Learning both ramda and FP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carmen Liu",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
