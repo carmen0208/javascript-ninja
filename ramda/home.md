@@ -24,3 +24,22 @@ This is the place to understand Ramdajs, more important: Get more understand of 
     * The notion to put data in the end argument.(Some extra useful tools: `partial`, `placeholder`, `flip` which can deal with the order of the argument, but as long as you put data in the end argument, everything is fine)
 
   [Example](3.partial_application.js)
+
+#### Declarative Programming
+
+##### Imperative vs Declarative
+
+* Imperative
+
+Programmer tell the code what to do and how to do. Imperative programming gives rise to a lot of constructs we use everyday:
+  * Contole Flow: `if else`
+  * Arithmetic operator: `+, -, X, /`
+  * Logic Operator : `&&, ||, ||!`
+
+* Declarative
+
+Declarative programming is a style of programming where the programmers tell the compute what to do by telling it what they want. The computer then figure out how to produce the result.
+
+> Functional programming is considered a subset of declarative programming.
+
+[Declarative Replacement](4.declarative_programming.js)
