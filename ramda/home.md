@@ -43,3 +43,13 @@ Declarative programming is a style of programming where the programmers tell the
 > Functional programming is considered a subset of declarative programming.
 
 [Declarative Replacement](4.declarative_programming.js)
+
+#### PointFree Style
+
+Key Point to PointFree Style:
+*  put the data last
+*  Curry all the things
+
+##### What is PointFree Style
+
+[Example](5.pointfree.js)
