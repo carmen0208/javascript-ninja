@@ -53,3 +53,7 @@ Key Point to PointFree Style:
 ##### What is PointFree Style
 
 [Example](5.pointfree.js)
+
+#### Immutability Objects
+
+[Example](6.immutablity_objects.js)
