@@ -2,16 +2,16 @@
 
 This is the place to understand Ramdajs, more important: Get more understand of FP by using Ramdajs
 
-#### Functional is a first citizen
+## Functional is a first citizen
 
 * [Basic Function](1.functional.js)
 
-#### Pipline VS Compose
+## Pipline VS Compose
 
 * How Pipeline Works? value of first function is the input the next function
 * How Compose Works? compose(f, g)(value) === f(g(value))
 
-##### Compse or Pipe?
+##### Compose or Pipe?
 * Pipe is easiest to understand when comming from a more imperative background since you read the function from left to right
 * Compose is a bite easier to translate to nested-function form like this: `compose(f, g)(value) === f(g(value))`, that's also why Compose read the fuction from right to left
 
@@ -25,7 +25,7 @@ This is the place to understand Ramdajs, more important: Get more understand of 
 
   [Example](3.partial_application.js)
 
-#### Declarative Programming
+## Declarative Programming
 
 ##### Imperative vs Declarative
 
@@ -44,7 +44,7 @@ Declarative programming is a style of programming where the programmers tell the
 
 [Declarative Replacement](4.declarative_programming.js)
 
-#### PointFree Style
+## PointFree Style
 
 Key Point to PointFree Style:
 *  put the data last
@@ -54,6 +54,6 @@ Key Point to PointFree Style:
 
 [Example](5.pointfree.js)
 
-#### Immutability Objects
+## Immutability Objects
 
 [Example](6.immutablity_objects.js)
