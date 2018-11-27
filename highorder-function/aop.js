@@ -1,5 +1,5 @@
-let service = ()=> {
- console.log("real function called")
+let service = () => {
+  console.log("real function called")
 }
 let test = () => {
   return {
