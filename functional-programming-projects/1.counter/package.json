@@ -1,0 +1,22 @@
+{
+  "name": "1.counter",
+  "version": "1.0.0",
+  "description": "a counter app that use functional programming methodology",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carmen Liu <carmen.liujia@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
+    "virtual-dom": "^2.1.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
