@@ -7,8 +7,10 @@ const initModel = 0
 function view(model) {
   return div([
     div({ className: 'mv2' },`Count: ${model}`),
-    button({ className: 'pv1 ph2 mr2' }, '+'),
-    button({ className: 'pv1 ph2' }, '-',)
+    button({ className: 'pv1 ph2 mr2',
+      onclick: ()=> console.log('+ clicked')}, '+'),
+    button({ className: 'pv1 ph2' ,
+      onclick: ()=> console.log('- clicked')}, '-',)
   ])
 }
 
