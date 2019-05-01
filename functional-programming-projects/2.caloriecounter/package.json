@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open"
   },
   "author": "Carmen Liu <carmen.liujia@gmail.com>",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "hyperscript-helpers": "^3.0.3",
     "ramda": "^0.25.0",
+    "hyperscript": "^2.0.2",
     "virtual-dom": "^2.1.1",
     "webpack-dev-server": "^2.9.4"
   }
