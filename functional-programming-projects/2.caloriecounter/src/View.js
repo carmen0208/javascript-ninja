@@ -1,10 +1,13 @@
 import hh from 'hyperscript-helpers';
 import { h } from 'virtual-dom'
-import { showFormMsg } from './Update'
+import { showFormMsg,
+  mealInputMsg,
+  caloriesInputMsg
+} from './Update'
 
 const { pre, div, h1, button, form, label, input } = hh(h);
 
-function FieldSet(labelText, inputValue, oninput) {
+function fieldSet(labelText, inputValue, oninput) {
   return div([
     label({className: 'db mb1'}, labelText),
     input({
@@ -43,11 +46,11 @@ function formView(dispatch, model) {
         onsubmit: e=> console.log('submited')
       },
       [
-        FieldSet('Meal', description,
-          e => console.log(e.target.value)
+        fieldSet('Meal', description,
+          e => dispatch(mealInputMsg(e.target.value))
         ),
-        FieldSet('Calories', calories || '',
-          e => console.log(e.target.value)
+        fieldSet('Calories', calories || '',
+          e => dispatch(caloriesInputMsg(e.target.value))
         ),
         buttonSet(dispatch)
       ]
@@ -68,7 +71,7 @@ function view(dispatch, model) {
     formView(dispatch, model),
     pre(JSON.stringify(model, null, 2))
   ]);
-  console.log(div_dom)
+  // console.log(div_dom)
   return div_dom;
 }
 
