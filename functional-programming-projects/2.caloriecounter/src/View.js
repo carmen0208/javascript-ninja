@@ -4,7 +4,9 @@ import * as R from 'ramda'
 import { showFormMsg,
   mealInputMsg,
   caloriesInputMsg,
-  saveMealMsg
+  saveMealMsg,
+  editMealMsg,
+  deleteMealMsg
 } from './Update'
 
 const {
@@ -97,11 +99,11 @@ function mealRow(dispatch, className, meal) {
     cell(td, 'pa2 tr', [
       i({
         className: 'ph1 fa fa-trash-o pointer',
-        onclick: () => console.log(meal.id),
+        onclick: () => dispatch(deleteMealMsg(meal.id)),
       }),
       i({
         className: 'ph1 fa fa-pencil-square-o pointer',
-        onclick: () => console.log(meal.id),
+        onclick: () => dispatch(editMealMsg(meal.id)),
       }),
     ]),
   ]);
